@@ -1,0 +1,10 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0F172A"/>
+  <circle cx="233" cy="178" r="260" fill="#FB7185" fill-opacity="0.28"/>
+  <circle cx="1241" cy="206" r="300" fill="#38BDF8" fill-opacity="0.26"/>
+  <circle cx="802" cy="733" r="332" fill="#34D399" fill-opacity="0.20"/>
+  <path d="M0 720C164 620 343 566 517 590C647 607 715 703 844 721C1034 748 1178 616 1343 576C1438 553 1524 560 1600 589V900H0V720Z" fill="#111827"/>
+  <path d="M196 687H498L340 214H280L196 687ZM286 547L340 384L396 547H286Z" fill="#F8FAFC"/>
+  <text x="620" y="386" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="108" font-weight="700">Build your own corner</text>
+  <text x="620" y="490" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="42">Hexo + GitHub Pages + Butterfly</text>
+</svg>

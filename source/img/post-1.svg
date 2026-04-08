@@ -1,0 +1,8 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#111827"/>
+  <circle cx="208" cy="165" r="148" fill="#F97316" fill-opacity="0.88"/>
+  <circle cx="987" cy="548" r="206" fill="#38BDF8" fill-opacity="0.42"/>
+  <path d="M152 570H294L223 352H191L152 570ZM197 499L223 420L249 499H197Z" fill="#F8FAFC"/>
+  <text x="352" y="332" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="74" font-weight="700">Start simple</text>
+  <text x="352" y="412" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="34">The first version only needs to work well</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#172554"/>
+  <rect x="104" y="104" width="1392" height="692" rx="56" fill="#E0F2FE" fill-opacity="0.08"/>
+  <circle cx="1332" cy="178" r="124" fill="#A78BFA" fill-opacity="0.6"/>
+  <circle cx="280" cy="676" r="170" fill="#22D3EE" fill-opacity="0.24"/>
+  <path d="M268 678H486L378 326H330L268 678ZM336 562L378 429L419 562H336Z" fill="#F8FAFC"/>
+  <text x="594" y="392" fill="#F8FAFC" font-family="Arial, sans-serif" font-size="102" font-weight="700">Archive of notes</text>
+  <text x="594" y="486" fill="#BFDBFE" font-family="Arial, sans-serif" font-size="40">Projects, essays, build logs, daily fragments</text>
+</svg>
