@@ -39,6 +39,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools/publish.ps1 -ValidateO
 
 `slug` 只允许小写英文字母、数字和连字符。需要更新已经发布的同名文章时，将 `overwrite` 改为 `true`。完整配置说明见 `publish.config.example.json`。
 
+完整操作指南：`source/_posts/config-driven-publishing-guide.md`
+
 ## 常用命令
 
 ```powershell
