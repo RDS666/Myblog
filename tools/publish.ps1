@@ -31,11 +31,24 @@ function Get-ConfiguredValue {
 function Resolve-ProjectPath {
     param([string]$PathValue)
 
-    if ([System.IO.Path]::IsPathRooted($PathValue)) {
-        return [System.IO.Path]::GetFullPath($PathValue)
+    $normalizedPath = $PathValue.Trim()
+    if ($normalizedPath.Length -ge 2) {
+        $firstCharacter = $normalizedPath[0]
+        $lastCharacter = $normalizedPath[$normalizedPath.Length - 1]
+        if (($firstCharacter -eq '"' -and $lastCharacter -eq '"') -or ($firstCharacter -eq "'" -and $lastCharacter -eq "'")) {
+            $normalizedPath = $normalizedPath.Substring(1, $normalizedPath.Length - 2).Trim()
+        }
     }
 
-    return [System.IO.Path]::GetFullPath((Join-Path $projectRoot $PathValue))
+    try {
+        if ([System.IO.Path]::IsPathRooted($normalizedPath)) {
+            return [System.IO.Path]::GetFullPath($normalizedPath)
+        }
+
+        return [System.IO.Path]::GetFullPath((Join-Path $projectRoot $normalizedPath))
+    } catch [System.ArgumentException] {
+        throw "Invalid path in publish config: $PathValue"
+    }
 }
 
 function ConvertTo-YamlString {
@@ -89,7 +102,8 @@ if ((Test-Path -LiteralPath $destinationPath) -and -not $overwrite) {
 }
 
 $markdown = Get-Content -LiteralPath $sourcePath -Raw -Encoding UTF8
-$hasFrontMatter = $markdown -match '(?s)^---\s*\r?\n.+?\r?\n---\s*(?:\r?\n|$)'
+$frontMatterPattern = '(?s)^---\s*\r?\n.*?\r?\n---\s*(?:\r?\n|$)'
+$hasFrontMatter = $markdown -match $frontMatterPattern
 
 if ($useExistingFrontMatter) {
     if (-not $hasFrontMatter) {
@@ -98,7 +112,7 @@ if ($useExistingFrontMatter) {
     $publishedContent = $markdown
 } else {
     if ($hasFrontMatter) {
-        throw "The document already has Front Matter. Set useExistingFrontMatter to true or remove it."
+        $markdown = $markdown -replace $frontMatterPattern, ''
     }
 
     $title = [string](Get-ConfiguredValue $settings "title" "")
