@@ -1,0 +1,144 @@
+:root {
+  --rds-green: #167d68;
+  --rds-blue: #277b8e;
+  --rds-coral: #df6948;
+  --rds-ink: #202927;
+  --rds-paper: #f5f7f6;
+}
+
+body {
+  letter-spacing: 0;
+}
+
+#page-header.full_page {
+  min-height: 620px;
+  max-height: 820px;
+}
+
+#site-title {
+  font-size: clamp(2.5rem, 7vw, 5rem) !important;
+  font-weight: 700;
+  letter-spacing: 0 !important;
+  text-shadow: 0 3px 24px rgba(0, 0, 0, 0.36);
+}
+
+#site-subtitle {
+  margin-top: 1rem;
+  font-size: clamp(1rem, 2.2vw, 1.35rem);
+  letter-spacing: 0;
+}
+
+#nav .site-page,
+#nav #site-name {
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+#recent-posts > .recent-post-item,
+.card-widget,
+.layout > div:first-child:not(.recent-posts),
+#post,
+#page,
+#archive {
+  border: 1px solid rgba(32, 41, 39, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 12px 34px rgba(32, 41, 39, 0.07);
+}
+
+#recent-posts > .recent-post-item {
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+#recent-posts > .recent-post-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(32, 41, 39, 0.12);
+}
+
+#recent-posts > .recent-post-item .post_cover img.post_bg {
+  transition: transform 500ms ease;
+}
+
+#recent-posts > .recent-post-item:hover .post_cover img.post_bg {
+  transform: scale(1.035);
+}
+
+.article-title,
+.post-title,
+h1,
+h2,
+h3 {
+  letter-spacing: 0 !important;
+}
+
+.article-sort-title,
+#page h1,
+#post h1 {
+  color: var(--rds-ink);
+}
+
+.article-meta-wrap,
+.content,
+.card-info-data {
+  letter-spacing: 0;
+}
+
+#article-container a:not(.fancybox):not(.headerlink) {
+  text-decoration-color: rgba(22, 125, 104, 0.35);
+  text-underline-offset: 3px;
+}
+
+#article-container blockquote {
+  border-left-width: 4px;
+  border-radius: 0 6px 6px 0;
+}
+
+#footer {
+  background: #202927;
+}
+
+#footer-wrap {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#footer-wrap a {
+  color: #9ed8ca;
+}
+
+html[data-theme='dark'] body {
+  --rds-ink: #e6eeeb;
+}
+
+html[data-theme='dark'] #recent-posts > .recent-post-item,
+html[data-theme='dark'] .card-widget,
+html[data-theme='dark'] .layout > div:first-child:not(.recent-posts),
+html[data-theme='dark'] #post,
+html[data-theme='dark'] #page,
+html[data-theme='dark'] #archive {
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  #page-header.full_page {
+    min-height: 520px;
+    height: 78vh;
+  }
+
+  #site-title {
+    font-size: 2.65rem !important;
+    padding: 0 1rem;
+  }
+
+  #site-subtitle {
+    padding: 0 1.25rem;
+  }
+
+  #recent-posts > .recent-post-item,
+  .layout > div:first-child:not(.recent-posts),
+  #post,
+  #page,
+  #archive {
+    border-radius: 6px;
+  }
+}

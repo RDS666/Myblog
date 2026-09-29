@@ -1,0 +1,280 @@
+nav:
+  logo:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
+menu:
+  首页: / || fas fa-house
+  归档: /archives/ || fas fa-box-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-user
+
+code_blocks:
+  theme: darker
+  macStyle: true
+  height_limit: 720
+  word_wrap: false
+  copy: true
+  language: true
+  shrink: false
+  fullpage: false
+
+social:
+  fab fa-github: https://github.com/RDS666 || GitHub || '#24292f'
+  fas fa-rss: /atom.xml || RSS || '#e87530'
+
+favicon: /images/favicon.svg
+avatar:
+  img: /images/avatar.svg
+  effect: false
+
+disable_top_img: false
+default_top_img: /images/hero.jpg
+index_img: /images/hero.jpg
+archive_img: /images/archive.jpg
+tag_img: /images/archive.jpg
+category_img: /images/archive.jpg
+footer_img: false
+background: '#f5f7f6'
+
+cover:
+  index_enable: true
+  aside_enable: true
+  archives_enable: true
+  default_cover:
+    - /images/cover-code.jpg
+    - /images/cover-writing.jpg
+
+error_404:
+  enable: true
+  subtitle: 页面走丢了，回到首页继续看看吧
+  background: /images/hero.jpg
+
+post_meta:
+  page:
+    date_type: created
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+  post:
+    position: left
+    date_type: both
+    date_format: date
+    categories: true
+    tags: true
+    label: true
+
+index_site_info_top: 43%
+index_top_img_height: 78vh
+subtitle:
+  enable: true
+  effect: true
+  typed_option:
+    typeSpeed: 70
+    backSpeed: 35
+    backDelay: 1800
+    loop: true
+  source: false
+  sub:
+    - 保持好奇，持续记录
+    - 把复杂的问题想清楚，再写简单
+    - 代码之外，也有生活
+
+index_layout: 3
+index_post_content:
+  method: 2
+  length: 180
+
+toc:
+  post: true
+  page: false
+  number: true
+  expand: false
+  style_simple: false
+  scroll_percent: true
+
+post_copyright:
+  enable: true
+  decode: false
+  author_href: https://github.com/RDS666
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+post_edit:
+  enable: true
+  url: https://github.com/RDS666/Myblog/edit/main/source/
+
+related_post:
+  enable: true
+  limit: 3
+  date_type: created
+post_pagination: 1
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  copyright:
+    enable: true
+    version: false
+  custom_text: 认真记录，慢慢生长
+
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: false
+  position: right
+  display:
+    archive: true
+    tag: true
+    category: true
+  card_author:
+    enable: true
+    description: 在技术与生活之间，记录值得留下的东西。
+    button:
+      enable: true
+      icon: fab fa-github
+      text: GitHub
+      link: https://github.com/RDS666
+  card_announcement:
+    enable: true
+    content: 欢迎来到我的数字花园。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 30
+    color: false
+    orderby: name
+    order: 1
+  card_archives:
+    enable: true
+    type: monthly
+    format: YYYY年MM月
+    order: -1
+    limit: 8
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
+    runtime_date: 2026/09/29 00:00:00
+
+readmode: true
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: 1
+rightside_scroll_percent: true
+
+anchor:
+  auto_update: false
+  click_to_scroll: true
+photofigcaption: true
+copy:
+  enable: true
+  copyright:
+    enable: false
+    limit_count: 150
+
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
+
+search:
+  use: local_search
+  placeholder: 搜索文章、标签或关键词
+  local_search:
+    preload: false
+    top_n_per_article: 2
+    unescape: false
+    pagination:
+      enable: true
+      hitsPerPage: 8
+
+share:
+  use: sharejs
+  sharejs:
+    sites: wechat,weibo,qq
+
+comments:
+  use:
+  text: true
+  lazyload: true
+  count: false
+  card_post_count: false
+
+theme_color:
+  enable: true
+  main: '#167d68'
+  paginator: '#167d68'
+  button_hover: '#df6948'
+  text_selection: '#74c7b2'
+  link_color: '#277b8e'
+  meta_color: '#687572'
+  hr_color: '#9bc8bd'
+  code_foreground: '#c8563c'
+  code_background: 'rgba(22, 125, 104, 0.08)'
+  toc_color: '#167d68'
+  blockquote_padding_color: '#167d68'
+  blockquote_background_color: 'rgba(22, 125, 104, 0.08)'
+  scrollbar_color: '#167d68'
+  meta_theme_color_light: '#f5f7f6'
+  meta_theme_color_dark: '#171b1a'
+
+rounded_corners_ui: true
+text_align_justify: false
+mask:
+  header: true
+  footer: true
+enter_transitions: true
+display_mode: light
+beautify:
+  enable: true
+  field: post
+  title_prefix_icon: '\f5fc'
+  title_prefix_icon_color: '#167d68'
+
+font:
+  global_font_size: 16px
+  code_font_size: 14px
+  font_family: 'Inter, "Noto Sans SC", "Microsoft YaHei", sans-serif'
+  code_font_family: '"JetBrains Mono", Consolas, monospace'
+
+lightbox: medium_zoom
+lazyload:
+  enable: true
+  native: true
+  field: site
+  placeholder:
+  blur: false
+
+Open_Graph_meta:
+  enable: true
+structured_data:
+  enable: true
+  alternate_name:
+    - RDS666 Blog
+
+inject:
+  head:
+    - <link rel="preconnect" href="https://fonts.googleapis.com">
+    - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    - <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    - <link rel="stylesheet" href="/Myblog/css/custom.css">
+  bottom: []
+
+CDN:
+  internal_provider: local
+  third_party_provider: jsdelivr
+  version: true

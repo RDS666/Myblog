@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="RDS666 avatar">
+  <rect width="256" height="256" rx="128" fill="#202927"/>
+  <circle cx="128" cy="128" r="96" fill="#167d68"/>
+  <path d="M62 87h132v82H62z" fill="#f5f7f6" opacity=".1"/>
+  <text x="128" y="145" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="54" font-weight="700">RDS</text>
+  <circle cx="190" cy="64" r="15" fill="#df6948"/>
+</svg>
