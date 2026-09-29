@@ -1,0 +1,17 @@
+{
+  "file": "drafts/article.md",
+  "title": "文章标题",
+  "slug": "article-slug",
+  "categories": ["技术笔记"],
+  "tags": ["Hexo", "Markdown"],
+  "description": "用一句话概括文章内容。",
+  "cover": "/images/cover-code.jpg",
+  "coverFile": "",
+  "assetsDirectory": "",
+  "date": "auto",
+  "updated": "auto",
+  "useExistingFrontMatter": false,
+  "overwrite": false,
+  "commitMessage": "发布：文章标题",
+  "push": true
+}

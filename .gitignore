@@ -3,6 +3,8 @@ public/
 .deploy_git/
 .idea/
 .preview/
+drafts/
+publish.config.json
 .DS_Store
 Thumbs.db
 npm-debug.log*
